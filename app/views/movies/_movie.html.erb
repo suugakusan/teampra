@@ -4,7 +4,11 @@
       <%= embed_youtube(movie.url) %>
     </div>
     <div class="card-body text-dark movie-body">
-      <div class="btn btn-secondary btn-block">読破済みボタン</div>
+      <p>
+        <object>
+          <a class="btn btn-secondary btn-block">読破済みにする</a>
+        </object>
+      </p>
       <p class="card-text movie-title">Lv.<%= "#{movie_counter}".to_i + 1%>：<%= movie.title %></p>
     </div>
   </div>
